@@ -12,11 +12,9 @@ spec:
       labels:
         app: flask-app
     spec:
-      nodeSelector:
-        kubernetes.io/hostname: minikube-m02  # Replace with the hostname of your worker node
       containers:
         - name: flask-container
-          image: bhargavakulla/flask-kube:latest  # Ensure this image is available on the nodes
+          image: kpkm25/flask-kube:latest  # Ensure this image is available on the nodes
           ports:
             - containerPort: 5000
           resources:
