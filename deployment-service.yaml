@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: kpkm25/flask-kube:latest  # Ensure this image is available on the nodes
+          image: ssethunmadav/flask-kube:latest  # Ensure this image is available on the nodes
           ports:
             - containerPort: 5000
           resources:
